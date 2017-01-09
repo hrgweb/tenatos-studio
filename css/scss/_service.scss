@@ -1,6 +1,9 @@
 .Service {
+	padding: 7em;
 
-	> .row {
+	> .row,
+	div,
+	.Service__image {
 		display: flex;
 		justify-content: center;
 	}
@@ -11,13 +14,36 @@
 			margin-right: $service_margin;
 			width: 200px;
 			max-width: 200px;
+
+			flex-direction: column;
+			align-items: center;
+
 			&:last-child { margin-right: 0; }
 		}
+	}
 
-		> div > img {
-			padding: 3em;
-			border-radius: 50%;
-			border: 1px solid $banner_border_color;
+	.Service__image {
+		padding: 3em;
+		width: $service_width;
+		max-width: $service_width;
+		height: $service_width;
+		border-radius: 50%;
+		border: 1px solid $service_border_color;
+	}
+
+	> .row > div {
+		
+		> h3 {
+			text-transform: uppercase;
+			padding-top: 1em;
+			padding-bottom: 1em;
+			font-size: 1.4em;
+			color: $service_font_color;
 		}
+
+		> p {
+			line-height: 1.8em;
+			text-align: center;
+		}	
 	}
 }

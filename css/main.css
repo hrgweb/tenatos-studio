@@ -69,7 +69,12 @@ header {
   border: 1px solid #65696e;
 }
 
-.Service > .row {
+.Service {
+  padding: 7em;
+}
+.Service > .row,
+.Service div,
+.Service .Service__image {
   display: flex;
   justify-content: center;
 }
@@ -77,14 +82,34 @@ header {
   margin-right: 70px;
   width: 200px;
   max-width: 200px;
+  flex-direction: column;
+  align-items: center;
 }
 .Service > .row > div:last-child {
   margin-right: 0;
 }
-.Service > .row > div > img {
+.Service .Service__image {
   padding: 3em;
+  width: 150px;
+  max-width: 150px;
+  height: 150px;
   border-radius: 50%;
-  border: 1px solid #65696e;
+  border: 1px solid #D0CFCF;
+}
+.Service > .row > div > h3 {
+  text-transform: uppercase;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 1.4em;
+  color: #3b434c;
+}
+.Service > .row > div > p {
+  line-height: 1.8em;
+  text-align: center;
+}
+
+.Newsletter {
+  background: url("../img/newsletter-bg.png") no-repeat;
 }
 
 
