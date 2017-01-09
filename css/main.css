@@ -1,0 +1,90 @@
+header {
+  padding-top: 50px;
+}
+
+.Logo {
+  padding-left: 400px;
+}
+
+.Menu__options {
+  display: inline-block;
+  padding-right: 400px;
+}
+.Menu__options > span, .Menu__options a {
+  color: #fff;
+}
+.Menu__options > span {
+  padding-right: 20px;
+}
+
+.header-banner-wrapper {
+  background: url("../img/banner.png") no-repeat;
+  background-size: cover;
+  height: 650px;
+  max-height: 650px;
+  width: 100%;
+}
+
+.Banner > .row {
+  padding-top: 80px;
+  padding-left: 500px;
+  padding-right: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Banner h2, .Banner p, .Banner a {
+  color: #fff;
+}
+.Banner h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 60px;
+}
+.Banner h2 > span {
+  color: #F7600E;
+}
+.Banner p {
+  line-height: 30px;
+  font-size: 17px;
+}
+.Banner .action {
+  padding-top: 60px;
+  padding-bottom: 150px;
+}
+.Banner .action > li > a {
+  width: 210px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.Banner .action > li > a.hire-us {
+  background: #F7600E;
+  text-transform: uppercase;
+  border: 1px solid #F7600E;
+}
+.Banner .action > li > a.our-work {
+  text-transform: uppercase;
+  border: 1px solid #65696e;
+}
+
+.Service > .row {
+  display: flex;
+  justify-content: center;
+}
+.Service > .row > div {
+  margin-right: 70px;
+  width: 200px;
+  max-width: 200px;
+}
+.Service > .row > div:last-child {
+  margin-right: 0;
+}
+.Service > .row > div > img {
+  padding: 3em;
+  border-radius: 50%;
+  border: 1px solid #65696e;
+}
+
+

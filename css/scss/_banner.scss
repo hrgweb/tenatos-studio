@@ -1,0 +1,59 @@
+.header-banner-wrapper {
+	background: url('../img/banner.png') no-repeat;
+	background-size: cover;
+	height: $height;
+	max-height: $height;
+	width: 100%;
+}
+
+.Banner {
+	> .row {
+		padding-top: 80px;
+		padding-left: $banner_padding;
+	    padding-right: $banner_padding;
+	    text-align: center;
+
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    justify-content: center;
+	}
+
+	h2, p, a {
+		color: $white;
+	}
+
+	h2 {
+		color: $white;
+		text-transform: uppercase;
+		font-size: $font_size;
+		> span { color: $font_color; }
+	}
+
+	p {
+		line-height: 30px;
+		font-size: 17px;
+	}
+
+	.action {
+		padding-top: 60px;
+		padding-bottom: 150px;
+
+		> li > a {
+			width: 210px;
+		    padding: 10px;
+		    border-radius: 10px;
+		}
+
+		> li > a.hire-us {
+			background: $font_color;
+		    text-transform: uppercase;
+		    border: 1px solid $font_color;
+		}
+
+		> li > a.our-work {
+		    text-transform: uppercase;
+		    border: 1px solid $banner_border_color;
+		}
+	}
+}

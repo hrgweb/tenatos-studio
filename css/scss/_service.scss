@@ -1,0 +1,23 @@
+.Service {
+
+	> .row {
+		display: flex;
+		justify-content: center;
+	}
+
+	> .row {
+
+		> div {
+			margin-right: $service_margin;
+			width: 200px;
+			max-width: 200px;
+			&:last-child { margin-right: 0; }
+		}
+
+		> div > img {
+			padding: 3em;
+			border-radius: 50%;
+			border: 1px solid $banner_border_color;
+		}
+	}
+}
