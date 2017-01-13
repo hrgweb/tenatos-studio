@@ -1,0 +1,74 @@
+@media screen and (min-width: 769px) {
+	.Service,
+	.Newsletter {
+		padding: 7em;
+	}
+
+	.Banner {
+		h2 { font-size: 3.5em; -webkit-transition: all .3s; }
+		@include queries-paragraph(1.2em);
+	}
+
+	.Service__card {
+		h3 { font-size: 2em; }
+		@include queries-paragraph(1.2em, 1.5em);
+	}
+
+	.Newsletter {
+		form { width: 100%; }
+	}
+
+	.Work,
+	.Team { 
+		padding: 5em 10em; 
+		@include site-title(3em);
+
+		p { font-size: 1.2em; }
+	}
+
+	.Work__card {
+		img { width: 100%; height: 100%; }
+	}
+
+	.Feedback { 
+		padding: 3em 10em;
+	}
+}
+
+@media screen and (min-width: 980px) {
+	.Service {
+		padding: 5em 2em;
+		display: flex;
+	}
+
+	.Service__card {
+		@include media-item;
+		@include queries-paragraph(1.1em, 1.7em)
+	}
+
+	.Work { padding: 5em 0; }
+
+	.Work__info {
+		h3 { 
+			font-size: 1.5em; 
+			margin: 0;
+		}
+		p { font-size: 1em; }
+	}
+
+	.Team { padding: 3em 1em; }
+
+	.Contact {
+		padding: 3em 15em;
+	}
+
+	.Contact__form {
+		// button { max-width: 150px !important; }
+	}
+}
+
+@media screen and (min-width: 1180px) {
+	.Contact {
+		padding: 3em 25em;
+	}
+}

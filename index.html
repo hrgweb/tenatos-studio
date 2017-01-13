@@ -5,306 +5,363 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>TenatosStudio</title>
-	<link rel="stylesheet" type="text/css" href="css/scss/vendor/_bootstrap.min.scss">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.0/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="css/scss/vendor/grid.min.css">
+	<link rel="stylesheet" type="text/css" href="css/scss/vendor/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/scss/vendor/slick-theme.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	<div class="wrapper">
-		<div class="header-banner-wrapper">
-			<header>
-				<div class="row">
-					<div class="Logo col-xs-4 col-sm-4 col-md-4 col-lg-4">
-						<a href="#">
-							<img src="img/logo.png" class="img-responsive" alt="TenatosStudio">
-						</a>
-					</div>
+	<div class="header-banner-wrapper">
+		<header class="columns is-mobile is-gapless">
+			<div class="Logo column">
+				<a href="#">
+					<img src="img/logo.png" class="" alt="TenatosStudio">
+				</a>
+			</div>
 
-					<div class="Menu col-xs-8 col-sm-8 col-md-8 col-lg-8">
-						<div class="Menu__options pull-right">
-							<span class="pull-left">Menu</span>	
-							<img src="img/hamburger.png" class="img-responsive">
-							<ul class="Menu__list hidden-lg">
-								<li><a href="#">Home</a></li>
-								<li><a href="#">Portfolio</a></li>
-								<li><a href="#">About Us</a></li>
-								<li><a href="#">Contact Us</a></li>
-								<li><a href="#">Feedback</a></li>
-							</ul>
+			<div class="Menu column is-one-quarter">
+				<div class="Menu____options is-pulled-right">
+					<span>Menu</span>
+					<img src="img/hamburger.png">
+				</div>
+				<!-- <ul class="Menu__list">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Feedback</a></li>
+				</ul> -->
+			</div>
+		</header>
+
+		<div class="Banner">
+			<h2 class="has-text-centered">We Design <span>Things</span></h2>
+			<p class="has-text-centered">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus mollitia impedit accusamus deleniti nulla odio esse omnis laboriosam.
+			</p>
+
+			<ul class="action">
+				<li><a href="#" class="button hire-us">Hire Us</a></li>
+				<li><a href="#" class="button our-work">Our Works</a></li>
+			</ul>
+
+			<div class="down-arrow">
+				<img src="img/down-arrow.png" alt="go down">
+			</div>
+		</div>
+	</div>
+
+	<div class="Service">
+		<div class="Service__card">
+			<div class="Service__image">
+				<img src="img/service.png" alt="print">
+			</div>
+			<h3>print design</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore architecto iste, aspernatur sed quidem a ea, modi corrupti beatae ab.</p>
+		</div>
+
+		<div class="Service__card">
+			<div class="Service__image">
+				<img src="img/service2.png" alt="monitor">
+			</div>
+			<h3>web design</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore architecto iste, aspernatur sed quidem a ea, modib.</p>
+		</div>
+
+		<div class="Service__card">
+			<div class="Service__image">
+				<img src="img/service3.png" alt="phone">
+			</div>
+			<h3>app design</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore architecto iste, aspernatur sed quidem a ea, modi corrupti.</p>
+		</div>
+
+		<div class="Service__card">
+			<div class="Service__image">
+				<img src="img/service4.png" alt="logo">
+			</div>
+			<h3>logo design</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore architecto iste, aspernatur sed quidem a ea, modi corrupti beatae ab.</p>
+		</div>
+	</div>
+
+	<div class="Newsletter">
+		<form>
+			<div class="control is-grouped">
+				<p class="control is-expanded">
+					<input type="text" class="input is-medium" placeholder="Enter your email address for newsletter">
+				</p>
+
+				<p class="control">
+					<button type="submit" class="button is-medium">Subscribe</button>
+				</p>
+			</div>
+		</form>
+	</div>
+
+	<div class="Work">
+		<h2>Our <span>Works</span></h2>
+		<p class="has-text-centered">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo explicabo illo repellendus consequatur laudantium nisi corporis ipsa possimus!
+		</p>
+
+		<div class="Work__portfolio">
+			<div class="row center-xs">
+				<div class="Work__card col-xs-12 col-sm-6 col-md-4">
+					<img src="img/work.png" alt="work">
+
+					<div class="Work__info is-hidden-mobile is-hidden-tablet">
+						<h3>Abazoo website</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eaque qui eum adipisci nemo voluptatem.
+						</p>
+
+						<div class="option">
+							<a href="#" class="button">Show project</a>
 						</div>
 					</div>
 				</div>
-			</header>
+				
+				<div class="Work__card col-xs-12 col-sm-6 col-md-4">
+					<img src="img/work2.png" alt="work2">
 
-			<div class="Banner">
-				<div class="row">
-					<h2>We Design <span>Things</span></h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus mollitia impedit accusamus deleniti nulla odio esse omnis laboriosam.
-					</p>
+					<div class="Work__info is-hidden-mobile is-hidden-tablet">
+						<h3>Abazoo website</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eaque qui eum adipisci nemo voluptatem.
+						</p>
 
-					<ul class="action list-inline">
-						<li><a href="#" class="btn btn-warning hire-us">Hire Us</a></li>
-						<li><a href="#" class="btn our-work">Our Works</a></li>
+						<div class="option">
+							<a href="#" class="button">Show project</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="Work__card col-xs-12 col-sm-6 col-md-4">
+					<img src="img/work3.png" alt="work3">
+
+					<div class="Work__info is-hidden-mobile is-hidden-tablet">
+						<h3>Abazoo website</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eaque qui eum adipisci nemo voluptatem.
+						</p>
+
+						<div class="option">
+							<a href="#" class="button">Show project</a>
+						</div>
+					</div>
+				</div>
+
+				
+				<div class="Work__card col-xs-12 col-sm-6 col-md-4">
+					<img src="img/work4.png" alt="work4">
+
+					<div class="Work__info is-hidden-mobile is-hidden-tablet">
+						<h3>Abazoo website</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eaque qui eum adipisci nemo voluptatem.
+						</p>
+
+						<div class="option">
+							<a href="#" class="button">Show project</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="Work__card col-xs-12 col-sm-6 col-md-4">
+					<img src="img/work5.png" alt="work5">
+
+					<div class="Work__info is-hidden-mobile is-hidden-tablet">
+						<h3>Abazoo website</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eaque qui eum adipisci nemo voluptatem.
+						</p>
+
+						<div class="option">
+							<a href="#" class="button">Show project</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="Work__card col-xs-12 col-sm-6 col-md-4">
+					<img src="img/work6.png" alt="work6">
+
+					<div class="Work__info is-hidden-mobile is-hidden-tablet">
+						<h3>Abazoo website</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eaque qui eum adipisci nemo voluptatem.
+						</p>
+
+						<div class="option">
+							<a href="#" class="button">Show project</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="show-more">
+			<a href="#">show more</a>
+		</div>
+	</div>
+
+	<div class="Feedback">
+		<div class="Feedback__slider">
+			<div class="Feedback__card">
+				<img src="img/team.png">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe explicabo corrupti quaerat excepturi! Neque porro, facere eos, quam quas illo!
+				</p>
+				<h5>John Smith</h5>
+			</div>
+
+			<div class="Feedback__card">
+				<img src="img/team2.png">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe explicabo corrupti quaerat excepturi! Neque porro, facere eos, quam quas illo! Lorem ipsum.
+				</p>
+				<h5>Lando Smith</h5>
+			</div>
+
+			<div class="Feedback__card">
+				<img src="img/team3.png">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe explicabo corrupti quaerat.
+				</p>
+				<h5>Jane Doe</h5>
+			</div>
+
+			<div class="Feedback__card">
+				<img src="img/team4.png">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius facilis, maiores beatae eum!
+				</p>
+				<h5>Billy Doe</h5>
+			</div>
+		</div>
+	</div>
+
+	<div class="Team">
+		<h2>Our <span>Team</span></h2>
+		<p class="has-text-centered">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates delectus quibusdam odit labore cupiditate earum eius sequi impedit magni! Repudiandae eveniet, ab dolores!
+		</p>
+
+		<div class="Team__card">
+			<div class="row center-xs">
+				<div class="Team__info col-md-3">
+					<img src="img/team.png" align="team">
+					<h3>Catherina Gail</h3>
+
+					<ul class="Team__User--social">
+						<li><a href="#"><img src="img/social-fb.png"></a></li>
+						<li><a href="#"><img src="img/social-twitter.png"></a></li>
+						<li><a href="#"><img src="img/social-gmail.png"></a></li>
 					</ul>
 
-					<img src="img/down-arrow.png" class="img-responsive" alt="go down">
-				</div>
-			</div>
-		</div>
-
-		<div class="Service">
-			<div class="row">
-				<div>
-					<div class="Service__image">
-						<img src="img/service.png" class="img-responsive" alt="print">
-					</div>
-					<h3>print design</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore architecto iste, aspernatur sed quidem a ea, modi corrupti beatae ab.</p>
-				</div>
-
-				<div>
-					<div class="Service__image">
-						<img src="img/service2.png" class="img-responsive" alt="monitor">
-					</div>
-					<h3>web design</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore architecto iste, aspernatur sed quidem a ea, modib.</p>
-				</div>
-
-				<div>
-					<div class="Service__image">
-						<img src="img/service3.png" class="img-responsive" alt="phone">
-					</div>
-					<h3>app design</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore architecto iste, aspernatur sed quidem a ea, modi corrupti.</p>
-				</div>
-
-				<div>
-					<div class="Service__image">
-						<img src="img/service4.png" class="img-responsive" alt="logo">
-					</div>
-					<h3>logo design</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore architecto iste, aspernatur sed quidem a ea, modi corrupti beatae ab.</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="Newsletter">
-			<form action="#" method="POST" role="form" class="form-horizontal">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Enter your email address for newsletter">
-
-					<div class="input-group-btn">
-						<button type="submit" class="btn btn-primary">Subscribe</button>
-					</div>
-				</div>
-			</form>
-		</div>
-
-		<div class="Work">
-			<div class="row">
-				<h2>Our Works</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo explicabo illo repellendus consequatur laudantium nisi corporis ipsa possimus!
-				</p>
-			</div>
-
-			<div class="Work__portfolio">
-				<div class="row">
-					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-						<img src="img/work.png" class="img-responsive" alt="work">
-					</div>
-
-					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-						<img src="img/work2.png" class="img-responsive" alt="work2">
-					</div>
-
-					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-						<img src="img/work3.png" class="img-responsive" alt="work3">
-					</div>
-
-					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-						<img src="img/work4.png" class="img-responsive" alt="work4">
-					</div>
-
-					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-						<img src="img/work5.png" class="img-responsive" alt="work5">
-					</div>
-
-					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-						<img src="img/work6.png" class="img-responsive" alt="work6">
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<a class="show-more" href="#">show more</a>
-			</div>
-		</div>
-
-		<div class="Feedback">
-			<div class="row">
-				<div class="Feedback__card">
-					<img src="img/team.png">
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe explicabo corrupti quaerat excepturi! Neque porro, facere eos, quam quas illo!
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis suscipit ratione architecto molestiae maxime deleniti, possimus magni.
 					</p>
-					<h5>John Smith</h5>
 				</div>
 
-				<div class="Feedback__card">
-					<img src="img/team2.png">
+				<div class="Team__info col-md-3">
+					<img src="img/team2.png" align="team">
+					<h3>Harvey Rube</h3>
+
+					<ul class="Team__User--social list-inline">
+						<li><a href="#"><img src="img/social-fb.png"></a></li>
+						<li><a href="#"><img src="img/social-twitter.png"></a></li>
+						<li><a href="#"><img src="img/social-gmail.png"></a></li>
+					</ul>
+
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe explicabo corrupti quaerat excepturi! Neque porro, facere eos, quam quas illo! Lorem ipsum.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis suscipit ratione architecto molestiae.
 					</p>
-					<h5>Lando Smith</h5>
 				</div>
 
-				<div class="Feedback__card">
-					<img src="img/team3.png">
+				<div class="Team__info col-md-3">
+					<img src="img/team3.png" align="team">
+					<h3>Janet Pris</h3>
+
+					<ul class="Team__User--social list-inline">
+						<li><a href="#"><img src="img/social-fb.png"></a></li>
+						<li><a href="#"><img src="img/social-twitter.png"></a></li>
+						<li><a href="#"><img src="img/social-gmail.png"></a></li>
+					</ul>
+
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe explicabo corrupti quaerat.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis suscipit ratione architecto.
 					</p>
-					<h5>Jane Doe</h5>
 				</div>
 
-				<div class="Feedback__card">
-					<img src="img/team4.png">
+				<div class="Team__info col-md-3">
+					<img src="img/team4.png" align="team">
+					<h3>Kevin Ward</h3>
+
+					<ul class="Team__User--social list-inline">
+						<li><a href="#"><img src="img/social-fb.png"></a></li>
+						<li><a href="#"><img src="img/social-twitter.png"></a></li>
+						<li><a href="#"><img src="img/social-gmail.png"></a></li>
+					</ul>
+
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis suscipit ratione architecto.
 					</p>
-					<h5>Billy Doe</h5>
-				</div>
-			</div>
-		</div>
-
-		<div class="Team">
-			<div class="row">
-				<h2>Our Team</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates delectus quibusdam odit labore cupiditate earum eius sequi impedit magni! Repudiandae eveniet, ab dolores!
-				</p>
-			</div>
-
-			<div class="Team__card">
-				<div class="row">
-					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-						<img src="img/team.png" class="img-responsive" align="team">
-						<h3>Catherina Gail</h3>
-
-						<ul class="Team__User--social list-inline">
-							<li><a href="#"><img src="img/social-fb.png"></a></li>
-							<li><a href="#"><img src="img/social-twitter.png"></a></li>
-							<li><a href="#"><img src="img/social-gmail.png"></a></li>
-						</ul>
-
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis suscipit ratione architecto molestiae maxime deleniti, possimus magni.
-						</p>
-					</div>
-
-					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-						<img src="img/team2.png" class="img-responsive" align="team">
-						<h3>Harvey Rube</h3>
-
-						<ul class="Team__User--social list-inline">
-							<li><a href="#"><img src="img/social-fb.png"></a></li>
-							<li><a href="#"><img src="img/social-twitter.png"></a></li>
-							<li><a href="#"><img src="img/social-gmail.png"></a></li>
-						</ul>
-
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis suscipit ratione architecto molestiae.
-						</p>
-					</div>
-
-					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-						<img src="img/team3.png" class="img-responsive" align="team">
-						<h3>Janet Pris</h3>
-
-						<ul class="Team__User--social list-inline">
-							<li><a href="#"><img src="img/social-fb.png"></a></li>
-							<li><a href="#"><img src="img/social-twitter.png"></a></li>
-							<li><a href="#"><img src="img/social-gmail.png"></a></li>
-						</ul>
-
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis suscipit ratione architecto.
-						</p>
-					</div>
-
-					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-						<img src="img/team4.png" class="img-responsive" align="team">
-						<h3>Kevin Ward</h3>
-
-						<ul class="Team__User--social list-inline">
-							<li><a href="#"><img src="img/social-fb.png"></a></li>
-							<li><a href="#"><img src="img/social-twitter.png"></a></li>
-							<li><a href="#"><img src="img/social-gmail.png"></a></li>
-						</ul>
-
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis suscipit ratione architecto.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="Contact">
-			<div class="row">
-				<h2>Say Hello</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore repellendus tempora sunt incidunt distinctio esse.
-				</p>
-			</div>
-
-			<div class="Contact__form">
-				<div class="row">
-					<form action="#" method="POST" role="form">
-						<div class="form-group col-xs-6 col-sm-6 col-md-6 col-lg-6">
-							<input type="text" class="form-control" placeholder="Your Email">
-						</div>
-
-						<div class="form-group col-xs-6 col-sm-6 col-md-6 col-lg-6">
-							<input type="text" class="form-control" placeholder="Your Email">
-						</div>
-
-						<div class="form-group">
-							<textarea id="input" class="form-control" rows="3" required="required"></textarea>
-						</div>
-					
-						
-					
-						<div class="form-group actions">
-							<button type="submit" class="btn btn-warning pull-left">Hire Us</button>
-							
-							<ul class="list-inline pull-right">
-								<li><a href="#"><img src="img/footer-fb.png" alt="fb"></a></li>
-								<li><a href="#"><img src="img/footer-twitter.png" alt="twitter"></a></li>
-								<li><a href="#"><img src="img/footer-gmail.png" alt="gmail"></a></li>
-								<li><a href="#"><img src="img/footer-intel.png" alt="be"></a></li>
-								<li><a href="#"><img src="img/footer-be.png" alt="be"></a></li>
-							</ul>
-						</div>
-					</form>
-				</div>
-			</div>
-
-			<div class="Footer">
-				<div class="row">
-					<div class="Footer__left col-xs-6 col-sm-6 col-md-6 col-lg-6">
-						<span>&copy; Copyright Design Studio</span>
-					</div>
-
-					<div class="Footer__right col-xs-6 col-sm-6 col-md-6 col-lg-6">
-						<span>Designed By Symu.co</span>
-					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
+	<div class="Contact">
+		<h2>Say <span>Hello</span></h2>
+		<p class="has-text-centered">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore repellendus tempora sunt incidunt distinctio esse.
+		</p>
+
+		<div class="Contact__form">
+			<form action="#" method="POST">
+				<p class="control">
+					<input type="text" class="input" placeholder="Your Name">
+				</p>
+
+				<p class="control">
+					<input type="text" class="input" placeholder="Your Email">
+				</p>
+
+				<p class="control">
+					<textarea id="input" class="textarea" rows="3" required="required"></textarea>
+				</p>
+				
+				<div class="control is-grouped group-action">
+					<p class="control">
+						<button type="submit" class="button">Hire Us</button>
+					</p>					
+
+					<ul class="social">
+						<li><a href="#"><img src="img/footer-fb.png" alt="fb"></a></li>
+						<li><a href="#"><img src="img/footer-twitter.png" alt="twitter"></a></li>
+						<li><a href="#"><img src="img/footer-gmail.png" alt="gmail"></a></li>
+						<li><a href="#"><img src="img/footer-intel.png" alt="be"></a></li>
+						<li><a href="#"><img src="img/footer-be.png" alt="be"></a></li>
+					</ul>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="Footer columns is-mobile">
+		<div class="Footer__left column is-6">
+			<p>&copy; Copyright Design Studio</p>
+		</div>
+
+		<div class="Footer__right column">
+			<p class="is-pulled-right">Designed By Symu<span>.</span>co</p>
+		</div>
+	</div>
+
 	<script src="js/vendor/jquery.min.js"></script>
-	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/vendor/slick.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

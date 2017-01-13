@@ -1,0 +1,75 @@
+.Work {
+	padding: 3em;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	@include site-title(2em);
+
+	p { margin: 1em 0 3em; }
+}
+
+.Work__portfolio {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.Work__card {
+	position: relative;
+	margin-bottom: 3em;
+	cursor: pointer;
+	padding: .2em;
+	border: 1px solid $service_border_color;
+
+	&:hover .Work__info {
+		display: flex !important;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	img { width: 100%; }
+}
+
+.Work__info {
+	background: rgba(235, 96, 20, 0.9);
+	height: 100%;
+	padding: 1em 1.5em;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	@include media-item($white);
+
+	h3 { font-size: 2em; }
+	p { font-size: 1.1em; }
+
+	a { 
+		@include button($white, 170px); 
+		color: $font_color;
+		text-transform: uppercase;
+	}
+
+	div.option,
+	.show-more {
+		display: flex;
+		justify-content: center;
+	}
+
+	div.option {
+		position: relative;
+		top: -1.5em;
+	}
+}
+
+.show-more {
+	margin: 3em 0;
+
+	> a {
+		color: $black;
+		text-transform: uppercase;
+	}
+}

@@ -1,115 +1,482 @@
 header {
-  padding-top: 50px;
+  padding: 2em;
 }
 
-.Logo {
-  padding-left: 400px;
+.Menu____options {
+  display: flex;
+  align-items: center;
 }
-
-.Menu__options {
-  display: inline-block;
-  padding-right: 400px;
-}
-.Menu__options > span, .Menu__options a {
+.Menu____options span {
   color: #fff;
-}
-.Menu__options > span {
-  padding-right: 20px;
+  margin-right: 1em;
 }
 
 .header-banner-wrapper {
-  background: url("../img/banner.png") no-repeat;
+  background-image: url("../img/banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  height: 650px;
-  max-height: 650px;
-  width: 100%;
 }
 
-.Banner > .row {
-  padding-top: 80px;
-  padding-left: 500px;
-  padding-right: 500px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.Banner h2, .Banner p, .Banner a {
+.Banner {
   color: #fff;
+  padding: 0 2.5em;
+  height: 320px;
 }
 .Banner h2 {
-  color: #fff;
+  font-size: 2.5em;
   text-transform: uppercase;
-  font-size: 60px;
+  margin-bottom: .2em;
+  text-align: center;
+  -webkit-transition: all .3s;
 }
-.Banner h2 > span {
+.Banner span {
   color: #F7600E;
 }
-.Banner p {
-  line-height: 30px;
-  font-size: 17px;
+.Banner ul.action,
+.Banner div.down-arrow {
+  display: flex;
+  justify-content: center;
 }
-.Banner .action {
-  padding-top: 60px;
-  padding-bottom: 150px;
+.Banner ul.action {
+  margin-top: 3em;
+  margin-bottom: 4em;
 }
-.Banner .action > li > a {
-  width: 210px;
-  padding: 10px;
-  border-radius: 10px;
-}
-.Banner .action > li > a.hire-us {
+.Banner ul.action a.hire-us {
   background: #F7600E;
-  text-transform: uppercase;
   border: 1px solid #F7600E;
+  color: #fff;
+  text-align: center;
+  width: 150px;
+  margin-right: 1em;
 }
-.Banner .action > li > a.our-work {
-  text-transform: uppercase;
-  border: 1px solid #65696e;
+.Banner ul.action a.our-work {
+  background: url(0,0,0,.4);
+  border: 1px solid url(0,0,0,.4);
+  color: #fff;
+  text-align: center;
+  width: 150px;
 }
 
 .Service {
-  padding: 7em;
+  padding: 3em;
 }
-.Service > .row,
-.Service div,
-.Service .Service__image {
+
+.Service__card {
+  margin-bottom: 3em;
+  padding: 1em 2em;
   display: flex;
-  justify-content: center;
-}
-.Service > .row > div {
-  margin-right: 70px;
-  width: 200px;
-  max-width: 200px;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
-.Service > .row > div:last-child {
-  margin-right: 0;
-}
-.Service .Service__image {
-  padding: 3em;
-  width: 150px;
-  max-width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 1px solid #D0CFCF;
-}
-.Service > .row > div > h3 {
+.Service__card h3 {
+  color: #4a4a4a !important;
+  font-size: 1.5em;
   text-transform: uppercase;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  font-size: 1.4em;
-  color: #3b434c;
-}
-.Service > .row > div > p {
-  line-height: 1.8em;
   text-align: center;
+  margin: 1em 0 .5em;
+  -webkit-transition: all .3s;
+}
+.Service__card p {
+  text-align: center;
+  color: #4a4a4a !important;
+  -webkit-transition: all .3s;
 }
 
 .Newsletter {
   background: url("../img/newsletter-bg.png") no-repeat;
+  background-size: cover;
+  height: 250px;
+  max-height: 250px;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Newsletter form {
+  width: 100%;
+}
+.Newsletter form input:focus {
+  border: 1px solid #F7600E;
+}
+.Newsletter form button {
+  background: #F7600E;
+  border: 1px solid #F7600E;
+  color: #fff;
+  text-align: center;
+  width: 150px;
+  text-transform: uppercase;
+}
+
+.Work {
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Work h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-bottom: .2em;
+  text-align: center;
+  -webkit-transition: all .3s;
+}
+.Work span {
+  color: #F7600E;
+}
+.Work p {
+  margin: 1em 0 3em;
+}
+
+.Work__portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Work__card {
+  position: relative;
+  margin-bottom: 3em;
+  cursor: pointer;
+  padding: .2em;
+  border: 1px solid #DFDCDC;
+}
+.Work__card:hover .Work__info {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Work__card img {
+  width: 100%;
+}
+
+.Work__info {
+  background: rgba(235, 96, 20, 0.9);
+  height: 100%;
+  padding: 1em 1.5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.Work__info h3 {
+  color: #fff !important;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1em 0 .5em;
+  -webkit-transition: all .3s;
+}
+.Work__info p {
+  text-align: center;
+  color: #fff !important;
+  -webkit-transition: all .3s;
+}
+.Work__info h3 {
+  font-size: 2em;
+}
+.Work__info p {
+  font-size: 1.1em;
+}
+.Work__info a {
+  background: #fff;
+  border: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  width: 170px;
+  color: #F7600E;
+  text-transform: uppercase;
+}
+.Work__info div.option,
+.Work__info .show-more {
+  display: flex;
+  justify-content: center;
+}
+.Work__info div.option {
+  position: relative;
+  top: -1.5em;
+}
+
+.show-more {
+  margin: 3em 0;
+}
+.show-more > a {
+  color: #4a4a4a;
+  text-transform: uppercase;
+}
+
+.Feedback {
+  background: url("../img/feedback-bg.png") no-repeat center;
+  background-size: cover;
+  color: #fff;
+  padding: 3em;
+}
+
+.Feedback__card {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+}
+.Feedback__card img {
+  width: 170px;
+  height: 170px;
+  margin-bottom: 2em;
+  border-radius: 50%;
+}
+.Feedback__card p {
+  font-size: 1.1em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.Feedback__card h5 {
+  color: #F7600E;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.Team {
+  padding: 3em;
+}
+.Team h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-bottom: .2em;
+  text-align: center;
+  -webkit-transition: all .3s;
+}
+.Team span {
+  color: #F7600E;
+}
+.Team p {
+  margin-bottom: 3em;
+}
+
+.Team__card,
+.Team__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Team__info {
+  cursor: pointer;
+  width: 350px;
+}
+.Team__info h3 {
+  color: #4a4a4a !important;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1em 0 .5em;
+  -webkit-transition: all .3s;
+}
+.Team__info p {
+  text-align: center;
+  color: #4a4a4a !important;
+  -webkit-transition: all .3s;
+}
+.Team__info:not(:last-child) {
+  margin-bottom: 3em;
+}
+.Team__info > img {
+  width: 250px;
+  height: 260px;
+  border-radius: 50%;
+  border-bottom: 10px solid transparent;
+  -webkit-transition: all .3s;
+}
+.Team__info h3,
+.Team__info .Team__User--social {
+  margin-bottom: 1em;
+}
+.Team__info:hover > img {
+  -webkit-transform: scale(1.1);
+  border-bottom: 10px solid #F7600E;
+}
+.Team__info:hover > .Team__User--social {
+  -webkit-filter: grayscale(0);
+}
+.Team__info:hover > h3, .Team__info:hover > p {
+  color: #F7600E !important;
+}
+
+.Team__User--social {
+  display: flex;
+}
+.Team__User--social li:not(:last-child) {
+  margin-right: 1em;
+}
+
+.Team__User--social {
+  -webkit-filter: grayscale(100%);
+}
+
+.Contact {
+  background: url("../img/footer-bg.png") no-repeat center;
+  background-size: cover;
+  padding: 3em;
+}
+.Contact h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-bottom: .2em;
+  text-align: center;
+  -webkit-transition: all .3s;
+}
+.Contact span {
+  color: #F7600E;
+}
+.Contact h2, .Contact p {
+  color: #fff;
+}
+.Contact p {
+  margin-bottom: 3em;
+}
+
+.Contact__form form {
+  padding-bottom: 3em;
+}
+.Contact__form textarea {
+  margin-bottom: 2em;
+}
+.Contact__form button {
+  background: #F7600E;
+  border: 1px solid #F7600E;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+.Contact__form div.group-action {
+  display: flex;
+  align-items: center;
+}
+
+.Contact__form ul.social {
+  display: flex;
+}
+.Contact__form ul.social li:not(:last-child) {
+  margin-right: 0.5em;
+}
+
+.Footer {
+  background: #3b434c;
+  color: #fff;
+  padding: 1em 2em;
+  text-transform: uppercase;
+}
+.Footer .Footer__right span {
+  color: #F7600E;
+}
+
+@media screen and (min-width: 769px) {
+  .Service,
+  .Newsletter {
+    padding: 7em;
+  }
+
+  .Banner h2 {
+    font-size: 3.5em;
+    -webkit-transition: all .3s;
+  }
+  .Banner p {
+    font-size: 1.2em;
+    line-height: 1.7em;
+  }
+
+  .Service__card h3 {
+    font-size: 2em;
+  }
+  .Service__card p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+
+  .Newsletter form {
+    width: 100%;
+  }
+
+  .Work,
+  .Team {
+    padding: 5em 10em;
+  }
+  .Work h2,
+  .Team h2 {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: .2em;
+    text-align: center;
+    -webkit-transition: all .3s;
+  }
+  .Work span,
+  .Team span {
+    color: #F7600E;
+  }
+  .Work p,
+  .Team p {
+    font-size: 1.2em;
+  }
+
+  .Work__card img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .Feedback {
+    padding: 3em 10em;
+  }
+}
+@media screen and (min-width: 980px) {
+  .Service {
+    padding: 5em 2em;
+    display: flex;
+  }
+
+  .Service__card h3 {
+    color: #4a4a4a !important;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1em 0 .5em;
+    -webkit-transition: all .3s;
+  }
+  .Service__card p {
+    text-align: center;
+    color: #4a4a4a !important;
+    -webkit-transition: all .3s;
+  }
+  .Service__card p {
+    font-size: 1.1em;
+    line-height: 1.7em;
+  }
+
+  .Work {
+    padding: 5em 0;
+  }
+
+  .Work__info h3 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  .Work__info p {
+    font-size: 1em;
+  }
+
+  .Team {
+    padding: 3em 1em;
+  }
+
+  .Contact {
+    padding: 3em 15em;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .Contact {
+    padding: 3em 25em;
+  }
 }
 
 

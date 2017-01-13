@@ -1,0 +1,49 @@
+@mixin button($color, $width) {
+	background: $color;
+    border: 1px solid $color;
+    color: $white;
+    text-align: center;
+    width: $width;
+}
+
+@mixin site-title($size: 2em) {
+	h2 {
+		font: {
+			size: $size;
+		}
+		text-transform: uppercase;
+		margin-bottom: .2em;
+		text-align: center;
+		-webkit-transition: all .3s;
+	}
+
+	span { color: $font_color; }
+}
+
+@mixin media-item($color:#4a4a4a) {
+	h3 {
+		color: $color !important;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		text-align: center;
+		margin: 1em 0 .5em;
+		-webkit-transition: all .3s;
+	}
+
+	p {
+		text-align: center;
+		color: $color !important;
+		-webkit-transition: all .3s;
+	}
+}
+
+@mixin icon-sepia($amount: 100%) {
+	-webkit-filter: grayscale($amount);
+}
+
+@mixin queries-paragraph($fontsize, $lineheight: 1.7em) {
+	p { 
+		font-size: $fontsize; 
+		line-height: $lineheight; 
+	}
+}

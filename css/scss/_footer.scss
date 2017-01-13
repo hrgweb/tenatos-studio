@@ -1,0 +1,13 @@
+.Footer {
+	background: $footer_color;
+	color: $white;
+	padding: 1em 2em;
+	text-transform: uppercase;
+
+	.Footer__right {
+
+		span { 
+			color: $font_color; 
+		}
+	}
+}

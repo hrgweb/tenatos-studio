@@ -1,0 +1,31 @@
+.Contact {
+	background: url('../img/footer-bg.png') no-repeat center;
+	background-size: cover;
+	padding: 3em;
+	@include site-title;
+
+	h2, p { color: $white; }
+
+	p { margin-bottom: 3em; }
+}
+
+.Contact__form {
+
+	form { padding-bottom: 3em; }
+	textarea { margin-bottom: 2em; }
+
+	button {
+		@include button($font_color, 100%);
+	}
+
+	div.group-action {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.Contact__form ul.social { 
+	display: flex;
+
+	li:not(:last-child) { margin-right: 0.5em; }
+}

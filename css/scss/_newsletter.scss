@@ -1,3 +1,24 @@
 .Newsletter {
 	background: url('../img/newsletter-bg.png') no-repeat;
+	background-size: cover;
+	height: $newsletter_height;
+	max-height: $newsletter_height;
+	padding: 2em;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	// .control.is-grouped>.control.is-expanded { margin-right: 0;}
+
+	form {
+		width: 100%;
+
+		input:focus { border: 1px solid $font_color; }
+
+		button { 
+			@include button($font_color, 150px); 
+			text-transform: uppercase;
+		}
+	}
 }
